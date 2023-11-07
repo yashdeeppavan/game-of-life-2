@@ -1,0 +1,7 @@
+agent { label 'JAVA_8' }
+    options {	    options {
+        retry(3)	        retry(3)
+        timeout(time: 30, units: 'MINUTES') 	        timeout(time: 30, unit: 'MINUTES') 
+    }	    }
+    triggers {	    triggers {
+        pollSCM('* * * * *')	        pollSCM('* * * * *')
